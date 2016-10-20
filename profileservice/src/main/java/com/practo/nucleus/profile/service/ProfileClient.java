@@ -1,4 +1,4 @@
-package com.practo.nucleus.profileservice;
+package com.practo.nucleus.profile.service;
 
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;

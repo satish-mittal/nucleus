@@ -1,4 +1,4 @@
-package com.practo.nucleus.profileservice;
+package com.practo.nucleus.profile.service;
 
 import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TThreadPoolServer;

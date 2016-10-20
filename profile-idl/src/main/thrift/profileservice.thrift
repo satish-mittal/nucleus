@@ -23,7 +23,7 @@ service ProfileService {
 
   list<ProfileId> getAllProfiles(1:AccountId accountId);
 
-  ProfileInfo getProfileInfo(1:ProfileId profileId);
+  ProfileInfo getProfile(1:ProfileId profileId);
 
-  void updateProfileInfo(1:ProfileId profileId, 2:ProfileInfo profileInfo);
+  void updateProfile(1:ProfileId profileId, 2:ProfileInfo profileInfo);
 }

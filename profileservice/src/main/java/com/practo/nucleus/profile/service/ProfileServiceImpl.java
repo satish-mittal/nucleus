@@ -1,4 +1,4 @@
-package com.practo.nucleus.profileservice;
+package com.practo.nucleus.profile.service;
 
 import java.util.List;
 
@@ -12,9 +12,7 @@ public class ProfileServiceImpl implements ProfileService.Iface {
 public ProfileServiceImpl() {
 		// initialize the service dependencies
 	}
-	public void createProfile(long accountId, long profileId) {
 
-	}
 	@Override
 	public long addProfile(long arg0, String arg1, String arg2) throws TException {
 		// TODO Auto-generated method stub
@@ -28,13 +26,13 @@ public ProfileServiceImpl() {
 	}
 
 	@Override
-	public ProfileInfo getProfileInfo(long arg0) throws TException {
+	public ProfileInfo getProfile(long arg0) throws TException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void updateProfileInfo(long arg0, ProfileInfo arg1) throws TException {
+	public void updateProfile(long arg0, ProfileInfo arg1) throws TException {
 		// TODO Auto-generated method stub
 		
 	}
