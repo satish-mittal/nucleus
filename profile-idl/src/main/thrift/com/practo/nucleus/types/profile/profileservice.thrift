@@ -1,5 +1,29 @@
 namespace java com.practo.nucleus.profile
 
+typedef i64 AccountId
+typedef i64 ProfileId
+
+struct AccountInfo {
+}
+
+struct MedicalInfo {
+}
+
+struct BiometricInfo {
+}
+
+struct ProfileInfo {
+  1: required AccountInfo accountInfo;
+  2: optional MedicalInfo medicalInfo;
+  3: optional BiometricInfo biometricInfo;
+}
+
 service ProfileService {
-  void createProfile(1:i64 accountId, 2:i64 profileId);
+  ProfileId addProfile(1:AccountId accountId, 2:string profileName, 3: string profileRelationShip);
+
+  list<ProfileId> getAllProfiles(1:AccountId accountId);
+
+  ProfileInfo getProfileInfo(1:ProfileId profileId);
+
+  void updateProfileInfo(1:ProfileId profileId, 2:ProfileInfo profileInfo);
 }

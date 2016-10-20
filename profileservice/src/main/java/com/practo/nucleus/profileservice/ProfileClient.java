@@ -17,7 +17,7 @@ public class ProfileClient {
 			TProtocol protocol = new TBinaryProtocol(transport);
 			ProfileService.Client client = new ProfileService.Client(protocol);
 
-			client.createProfile(0, 0);
+			//client.createProfile(0);
 			System.out.println("created profile");
 		} catch (TException e) {
 			e.printStackTrace();
